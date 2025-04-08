@@ -4,17 +4,17 @@ const accessingArrayElements = document.querySelector('.accessingArrayElements')
 const usingLength = document.querySelector('.usingLength');
 
 const fruits = ["apple", "banana", "cherry"]; //Array Creation//
-console.log(fruits);
+console.log(`Array creation: ${fruits}`);
 arrayCreation.innerText = `Array creation: ${fruits}`;
 
 
 let fruitIndexOfOne = fruits[1]; //Accessing Array Elements//
-console.log(fruitIndexOfOne);
+console.log(`Accessing Array Elements: ${fruitIndexOfOne}`);
 accessingArrayElements.innerText = `Accessing Array Elements: ${fruitIndexOfOne}`;
 
 
 let totalFruits = fruits.length; //Using Length//
-console.log(totalFruits);
+console.log(`Using Length: ${totalFruits}`);
 usingLength.innerText = `Using Length: ${totalFruits}`;
 
 //+++Part 2+++//
@@ -23,12 +23,12 @@ const usingPop = document.querySelector('.usingPop');
 const part2Challenge = document.querySelector('.part2Challenge');
 
 fruits.push("orange"); //Using push//
-console.log(fruits);
+console.log(`Using push: ${fruits}`);
 usingPush.innerText = `Using push: ${fruits}`;
 
 
 fruits.pop(); //Using pop//
-console.log(fruits);
+console.log(`Using pop: ${fruits}`);
 usingPop.innerText = `Using pop: ${fruits}`;
 
 
@@ -45,6 +45,15 @@ console.log(fruits);
 part2Challenge.innerText = `Updated array: ${fruits} | Updated length: ${fruits.length}`;
 
 //+++Part 3+++//
+
+const forLoopAllFruits = document.querySelector('.forLoopAllFruits');
+const forLoopUpperCaseAllFruits = document.querySelector('.forLoopUpperCaseAllFruits');
+const countingSpecificItems = document.querySelector('.countingSpecificItems');
+
+for (let fruitChoice = 0; fruitChoice < fruits.length; fruitChoice++){
+    
+}
+
 
 
 
