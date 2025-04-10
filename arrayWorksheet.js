@@ -1,6 +1,6 @@
 //+++Part 1+++//
 
-const fruits = ["apple", "apple", "banana", "apple", "cherry"]; //Array Creation//
+const fruits = ["apple", "banana", "cherry"]; //Array Creation//
 console.log(`Array creation: ${fruits}`);
 
 
@@ -57,8 +57,18 @@ console.log(currentCount); //belongs on the outside because we only need it to r
 
 //+++Part 4+++//
 
+let cart = []; //building a shopping cart
 
+cart.push("cereal", "milk", "granola");
+console.log(cart);
 
+cart.pop();
+console.log(`There are ${cart.length} items in the cart: ${cart}`);
 
+let numbers = [1, 2, 3, 4, 5]; //reverse the order
 
+for (let reverseNums = numbers.length - 1; reverseNums >= 0; reverseNums--){
+    console.log(numbers[reverseNums]);
+}
 
+//+++Part 5+++//
