@@ -95,3 +95,13 @@ for (let pt6Even = 0; pt6Even < pt6Array.length; pt6Even++){
 }
 
 //+++Part 7+++//
+
+const studentNames = ["Alice", "Bob", "Charlie"];
+const subjectNames = ["Math", "Science"];
+
+for (let studentIndex = 0; studentIndex < studentNames.length; studentIndex++){
+    console.log(studentNames[studentIndex]);
+    for (let subjectIndex = 0; subjectIndex < subjectNames.length; subjectIndex++){
+        console.log(subjectNames[subjectIndex]);
+    }
+}
