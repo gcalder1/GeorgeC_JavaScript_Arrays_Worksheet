@@ -100,8 +100,18 @@ const studentNames = ["Alice", "Bob", "Charlie"];
 const subjectNames = ["Math", "Science"];
 
 for (let studentIndex = 0; studentIndex < studentNames.length; studentIndex++){
-    console.log(studentNames[studentIndex]);
     for (let subjectIndex = 0; subjectIndex < subjectNames.length; subjectIndex++){
-        console.log(subjectNames[subjectIndex]);
+        console.log(`${studentNames[studentIndex]} - ${subjectNames[subjectIndex]}`);
     }
-}
+};
+
+//The way my nested loop works is that the outer loop controls the flow. It will run once and will continue after the inner loop has finished running.
+//And so, as the outer loop makes its first run, the inner loop will make its runs too,
+//iterating through its array, therefore creating temporary pairs elements. And we can visually see these
+//temporary pairs using interpolating within our console logged template literal.
+//Since the outer loop has not/ will not continue until the nested loop finishes
+//iterating through each of its elements, the element that the inner loop is currently at
+//combines with the outer loop element for that loop. That is why
+//we can console log the change using a template literal via string interpolation
+//and visually see what is happening with the data since both elements are
+//temporarily paired with each other.
