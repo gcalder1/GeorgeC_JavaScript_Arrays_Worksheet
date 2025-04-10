@@ -1,36 +1,24 @@
 //+++Part 1+++//
-const arrayCreation = document.querySelector('.arrayCreation');
-const accessingArrayElements = document.querySelector('.accessingArrayElements');
-const usingLength = document.querySelector('.usingLength');
 
-const fruits = ["apple", "banana", "cherry"]; //Array Creation//
+const fruits = ["apple", "apple", "banana", "apple", "cherry"]; //Array Creation//
 console.log(`Array creation: ${fruits}`);
-arrayCreation.innerText = `Array creation: ${fruits}`;
 
 
 let fruitIndexOfOne = fruits[1]; //Accessing Array Elements//
 console.log(`Accessing Array Elements: ${fruitIndexOfOne}`);
-accessingArrayElements.innerText = `Accessing Array Elements: ${fruitIndexOfOne}`;
 
 
 let totalFruits = fruits.length; //Using Length//
 console.log(`Using Length: ${totalFruits}`);
-usingLength.innerText = `Using Length: ${totalFruits}`;
+
 
 //+++Part 2+++//
-const usingPush = document.querySelector('.usingPush');
-const usingPop = document.querySelector('.usingPop');
-const part2Challenge = document.querySelector('.part2Challenge');
 
 fruits.push("orange"); //Using push//
 console.log(`Using push: ${fruits}`);
-usingPush.innerText = `Using push: ${fruits}`;
-
 
 fruits.pop(); //Using pop//
 console.log(`Using pop: ${fruits}`);
-usingPop.innerText = `Using pop: ${fruits}`;
-
 
 //For the challenge, the two fruits I will be adding are: tomato & pepper.
 //What I think will happen is that adding both will increase the index by 
@@ -42,17 +30,33 @@ fruits.push("tomato", "pepper");
 console.log(fruits);
 fruits.pop([4]);
 console.log(fruits);
-part2Challenge.innerText = `Updated array: ${fruits} | Updated length: ${fruits.length}`;
 
 //+++Part 3+++//
 
-const forLoopAllFruits = document.querySelector('.forLoopAllFruits');
-const forLoopUpperCaseAllFruits = document.querySelector('.forLoopUpperCaseAllFruits');
-const countingSpecificItems = document.querySelector('.countingSpecificItems');
+for (let fruitChoice = 0; fruitChoice < fruits.length; fruitChoice++){ //using for loop for all fruits
+    console.log(`Current fruit: ${fruits[fruitChoice]}`); //showing each fruit passed through the loop till end
+}
 
-for (let fruitChoice = 0; fruitChoice < fruits.length; fruitChoice++){
+for (let fruitChoice = 0; fruitChoice < fruits.length; fruitChoice++){  //using for loop to uppercase all letters
+    console.log(`CURRENT FRUIT: ${fruits[fruitChoice].toUpperCase()}`);
+}
+
+const search = "apple";
+let currentCount = 0;
+
+for (let fruitChoice = 0; fruitChoice < fruits.length; fruitChoice++){ //counting specific items
+
+    if (fruits[fruitChoice] === search){
+        currentCount = currentCount + 1;
+        
+    }
     
 }
+
+console.log(currentCount); //belongs on the outside because we only need it to run once when we want to know how many times it appeared NOT when it does appear
+
+//+++Part 4+++//
+
 
 
 
