@@ -82,6 +82,16 @@ if (array1.length > array2.length){
     console.log("Array 2 has a greater length")
 } else {
     console.log("Both arrays equal the same length");
-}
+};
 
 //+++Part 6+++//
+
+const pt6Array = [10, 20, 30, 40, 50, 60];
+
+for (let pt6Even = 0; pt6Even < pt6Array.length; pt6Even++){
+    if (pt6Even % 2 === 0){
+        console.log(pt6Array[pt6Even]);
+    }
+}
+
+//+++Part 7+++//
