@@ -51,7 +51,7 @@ for (let fruitChoice = 0; fruitChoice < fruits.length; fruitChoice++){ //countin
         
     }
     
-}
+};
 
 console.log(currentCount); //belongs on the outside because we only need it to run once when we want to know how many times it appeared NOT when it does appear
 
@@ -69,6 +69,19 @@ let numbers = [1, 2, 3, 4, 5]; //reverse the order
 
 for (let reverseNums = numbers.length - 1; reverseNums >= 0; reverseNums--){
     console.log(numbers[reverseNums]);
-}
+};
 
 //+++Part 5+++//
+
+let array1 = ["a", "b", "c", "d"];
+let array2= ["red", "green", "blue"];
+
+if (array1.length > array2.length){
+    console.log("Array 1 has a greater length");
+} else if (array2.length > array1.length) {
+    console.log("Array 2 has a greater length")
+} else {
+    console.log("Both arrays equal the same length");
+}
+
+//+++Part 6+++//
