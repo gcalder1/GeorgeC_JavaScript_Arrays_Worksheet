@@ -28,7 +28,7 @@ console.log(`Using pop: ${fruits}`);
 //fruits.length displaying as 4.
 fruits.push("tomato", "pepper");
 console.log(fruits);
-fruits.pop([4]);
+fruits.pop();
 console.log(fruits);
 
 //+++Part 3+++//
@@ -53,7 +53,7 @@ for (let fruitChoice = 0; fruitChoice < fruits.length; fruitChoice++){ //countin
     
 };
 
-console.log(currentCount); //belongs on the outside because we only need it to run once when we want to know how many times it appeared NOT when it does appear
+console.log(`The searched word appears: ${currentCount} time(s).`); //belongs on the outside because we only need it to run once when we want to know how many times it appeared NOT when it does appear
 
 //+++Part 4+++//
 
